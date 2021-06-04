@@ -64,7 +64,6 @@ namespace SPI_Class
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Txt_ID = new System.Windows.Forms.TextBox();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.panel_Title.SuspendLayout();
             this.panel_Right.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DVG_Data)).BeginInit();
@@ -196,7 +195,6 @@ namespace SPI_Class
             // panel_Left
             // 
             this.panel_Left.BackColor = System.Drawing.Color.DarkOrchid;
-            this.panel_Left.Controls.Add(this.iconButton7);
             this.panel_Left.Controls.Add(this.Txt_DOB);
             this.panel_Left.Controls.Add(this.Btn_Delete);
             this.panel_Left.Controls.Add(this.Btn_Edit);
@@ -526,24 +524,6 @@ namespace SPI_Class
             this.Txt_ID.Size = new System.Drawing.Size(200, 26);
             this.Txt_ID.TabIndex = 1;
             // 
-            // iconButton7
-            // 
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.iconButton7.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 30;
-            this.iconButton7.Location = new System.Drawing.Point(278, 434);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(103, 34);
-            this.iconButton7.TabIndex = 33;
-            this.iconButton7.Text = "លុប";
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
-            // 
             // Frm_Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 25F);
@@ -607,6 +587,5 @@ namespace SPI_Class
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Txt_ID;
-        private FontAwesome.Sharp.IconButton iconButton7;
     }
 }
