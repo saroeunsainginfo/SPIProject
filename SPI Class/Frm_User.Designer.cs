@@ -31,13 +31,13 @@ namespace SPI_Class
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Panel_Title = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.Btn_Minimize = new FontAwesome.Sharp.IconButton();
             this.Btn_Close = new FontAwesome.Sharp.IconButton();
             this.Panel_Left = new System.Windows.Forms.Panel();
             this.Dgv_Data = new System.Windows.Forms.DataGridView();
             this.Panel_Right = new System.Windows.Forms.Panel();
+            this.Btn_Staff = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
             this.Btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,7 +57,6 @@ namespace SPI_Class
             this.panel1 = new System.Windows.Forms.Panel();
             this.Txt_UserID = new System.Windows.Forms.TextBox();
             this.Btn_Save = new System.Windows.Forms.Button();
-            this.Btn_Staff = new System.Windows.Forms.Button();
             this.Panel_Title.SuspendLayout();
             this.Panel_Left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Data)).BeginInit();
@@ -67,7 +66,6 @@ namespace SPI_Class
             // Panel_Title
             // 
             this.Panel_Title.BackColor = System.Drawing.Color.Silver;
-            this.Panel_Title.Controls.Add(this.label5);
             this.Panel_Title.Controls.Add(this.iconButton5);
             this.Panel_Title.Controls.Add(this.Btn_Minimize);
             this.Panel_Title.Controls.Add(this.Btn_Close);
@@ -77,16 +75,6 @@ namespace SPI_Class
             this.Panel_Title.Name = "Panel_Title";
             this.Panel_Title.Size = new System.Drawing.Size(600, 30);
             this.Panel_Title.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(38, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 25);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "បង្កើតគណនីប្រើប្រាស់ថ្មី";
             // 
             // iconButton5
             // 
@@ -185,6 +173,19 @@ namespace SPI_Class
             this.Panel_Right.Name = "Panel_Right";
             this.Panel_Right.Size = new System.Drawing.Size(300, 470);
             this.Panel_Right.TabIndex = 2;
+            // 
+            // Btn_Staff
+            // 
+            this.Btn_Staff.FlatAppearance.BorderSize = 0;
+            this.Btn_Staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Staff.ForeColor = System.Drawing.Color.ForestGreen;
+            this.Btn_Staff.Location = new System.Drawing.Point(222, 6);
+            this.Btn_Staff.Name = "Btn_Staff";
+            this.Btn_Staff.Size = new System.Drawing.Size(75, 33);
+            this.Btn_Staff.TabIndex = 20;
+            this.Btn_Staff.Text = "Staff";
+            this.Btn_Staff.UseVisualStyleBackColor = true;
+            this.Btn_Staff.Click += new System.EventHandler(this.Btn_Staff_Click);
             // 
             // Btn_Delete
             // 
@@ -391,19 +392,6 @@ namespace SPI_Class
             this.Btn_Save.UseVisualStyleBackColor = true;
             this.Btn_Save.Click += new System.EventHandler(this.Btn_Save_Click);
             // 
-            // Btn_Staff
-            // 
-            this.Btn_Staff.FlatAppearance.BorderSize = 0;
-            this.Btn_Staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Staff.ForeColor = System.Drawing.Color.ForestGreen;
-            this.Btn_Staff.Location = new System.Drawing.Point(222, 6);
-            this.Btn_Staff.Name = "Btn_Staff";
-            this.Btn_Staff.Size = new System.Drawing.Size(75, 33);
-            this.Btn_Staff.TabIndex = 20;
-            this.Btn_Staff.Text = "Staff";
-            this.Btn_Staff.UseVisualStyleBackColor = true;
-            this.Btn_Staff.Click += new System.EventHandler(this.Btn_Staff_Click);
-            // 
             // Frm_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 25F);
@@ -420,7 +408,6 @@ namespace SPI_Class
             this.Name = "Frm_User";
             this.Load += new System.EventHandler(this.Frm_User_Load);
             this.Panel_Title.ResumeLayout(false);
-            this.Panel_Title.PerformLayout();
             this.Panel_Left.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Data)).EndInit();
             this.Panel_Right.ResumeLayout(false);
@@ -432,7 +419,6 @@ namespace SPI_Class
         #endregion
 
         private System.Windows.Forms.Panel Panel_Title;
-        private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton Btn_Minimize;
         private FontAwesome.Sharp.IconButton Btn_Close;
